@@ -15,11 +15,21 @@ public class EmployeeEntity {
     @Column(name = "wage")
     private int wage;
 
-    public EmployeeEntity(){}
+    public EmployeeEntity() {
+    }
 
-    public EmployeeEntity(String name, int wage) {
+    public EmployeeEntity(int id, String name, int wage) {
+        this.id = id;
         this.name = name;
         this.wage = wage;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -38,11 +48,4 @@ public class EmployeeEntity {
         this.wage = wage;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 }

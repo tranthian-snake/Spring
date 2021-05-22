@@ -13,7 +13,7 @@
         <div class="col-lg-9 col-md-12">
             <div class="card card-small">
                 <div class="card-body">
-                    <form class="add-new-post" method="post" action="index">
+                    <form class="add-new-post" method="post" action="save">
                         <input class="form-control" type="text" placeholder="Name Employees" name="name">
                         <input class="form-control" type="number" placeholder="Wage" name="wage">
                         <input class="btn btn-primary" style="float: right" type="submit" value="Submit">

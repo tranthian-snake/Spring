@@ -16,15 +16,15 @@ public class WebController {
     @Autowired
     EmployeeService employeeService;
 
-    @GetMapping({"/", "/index"})
+    @GetMapping("/index")
     public String index(Model model) {
         List<EmployeeEntity> employees = employeeService.getAllEmployees();
-        model.addAttribute("employee", employees);
+        model.addAttribute("employees", employees);
         return "employees";
     }
-    @RequestMapping({"/create"})
+    @RequestMapping({"/", "/create"})
     public String createEmployee(Model model) {
-        model.addAttribute("employee", new EmployeeEntity());
+        model.addAttribute("employees", new EmployeeEntity());
         return "index";
     }
 

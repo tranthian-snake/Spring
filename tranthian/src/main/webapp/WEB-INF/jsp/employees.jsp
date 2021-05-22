@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<h1>Index</h1>
+<h1>Employees</h1>
 
 <div class="w3-container">
     <table class="w3-table w3-striped">
@@ -17,7 +17,7 @@
             <th>Name</th>
             <th>Wage</th>
         </tr>
-        <c:forEach items="${emmployees}" var="p">
+        <c:forEach items="${employees}" var="p">
             <tr>
                 <td>${p.id}</td>
                 <td>${p.name}</td>
